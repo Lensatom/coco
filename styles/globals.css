@@ -154,6 +154,8 @@ button:active{
     min-height: 100%;
     width: 100%;
     align-items: center;
+    top: 0%;
+    left: 0%;
   }
   .login, div.loginVideo{
     width: 100%;
