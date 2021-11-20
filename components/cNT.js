@@ -42,7 +42,7 @@ function CNT(props) {
                     <input placeholder="4" className={styles.CNTInput} value={props.four} onChange={props.changeFour}/>
                     <input placeholder="5" className={styles.CNTInput} value={props.five} onChange={props.changeFive}/>
                 </span>
-                <button type="submit" className={styles.CNTInput}> Done </button>
+                <button type="submit" className={styles.CNTInput} onClick={setupDone}> Done </button>
             </form>
         </div>
     )
