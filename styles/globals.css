@@ -1,0 +1,149 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.cover h2{
+  padding: 1%;
+  background-color: white;
+}
+
+input{
+  border:0;
+  padding: 2%;
+}
+
+.loginPage{
+  position: absolute;
+  background: linear-gradient(45deg, midnightblue, purple);
+  color:white;  
+  width: 66%;
+  height: 64%;
+  box-shadow: 1px 1px 10px 1px grey;
+  left: 18%;
+  top: 16%;
+  padding: 2% 0%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.loginLogo{
+  position: absolute;
+  font-family: ink free;
+  top: 3%;
+  left: 3%;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.login, div.loginVideo{
+  width: 40%;
+  padding: 3% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.loginVideo{
+  width: 60%;
+}
+
+video.loginVideo{
+  border: 10px solid white;
+}
+
+.loginHeading{
+  margin-bottom: 10%;
+}
+
+.loginForm{
+  width :100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.loginInput{
+  margin: 0.5% 0% 6% 0%;
+  text-align: center;
+  border-radius: 10px;
+  border: 0px solid transparent;
+  padding: 2.5%;
+}
+
+.loginLink{
+  width: 30%;
+  text-align: center;
+}
+
+.loginButton, .cAButton, .aUButton{
+  text-align: center;
+  width: 30%;
+  padding: 3% 3%;
+  margin: 10% 0%;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px 1px black;
+  color: white;
+  border: 0;
+}
+
+.loginLabel{
+  margin: 5% 0% 0% 0%
+}
+
+.cAButton{
+  width: 100%;
+  padding: 9% 3%; 
+}
+
+.aUButton{
+  width: 100%;
+  margin-top: 25%;
+  padding: 9% 3%;
+}
+
+.loginButton:active, .cAButton:active, .aUButton:active{
+  box-shadow: 0px 0px 5px 0.5px black;
+}
+
+.account{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.fp{
+  color: white;
+  font-family: monospace;
+  margin-top: -5%;
+}
+
+button:active{
+  box-shadow: 0px 0px 1px 1px black
+}
+
+.error{
+  position: absolute;
+  color: red;
+  top: 75%;
+}
