@@ -160,7 +160,7 @@ button:active{
   .login, div.loginVideo{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 50%;
   }
   .loginLink{
     width: 100%;
@@ -173,10 +173,10 @@ button:active{
   .login{
     position: absolute;
     width: 100%;
-    top: 1%;
+    top: 3%;
   }
   div.loginVideo{
-    top: 102%;
+    top: 55%;
   }
   .account{
     flex-direction: column;
