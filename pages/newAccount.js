@@ -1,6 +1,5 @@
 import { useState, useEffect} from 'react'
 import { useRouter } from 'next/router'
-import axios from 'axios'
 import Link from 'next/link'
 import styles from '../styles/NewAccount.module.css'
 
@@ -130,18 +129,21 @@ function Account({ posts }) {
         }
         else {
             setDisplay("flex") 
-            const res = async () => await axios.post(database, {
-                email: email, 
-                firstName: firstName, 
-                lastName: lastName,
-                otherName: "not set",
-                gender: "not set",
-                age: "not set",
-                country: "not set",
-                organization: "not set",
-                status: "active",
-                password: password,
-                handle: "@" + handle
+            fetch(database, {
+                method: "post",
+                body: {
+                    email: email, 
+                    firstName: firstName, 
+                    lastName: lastName,
+                    otherName: "not set",
+                    gender: "not set",
+                    age: "not set",
+                    country: "not set",
+                    organization: "not set",
+                    status: "active",
+                    password: password,
+                    handle: "@" + handle
+                }
             })
             res()
 
