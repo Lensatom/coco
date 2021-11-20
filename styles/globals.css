@@ -152,5 +152,13 @@ button:active{
   .loginPage{
     flex-direction: column;
     min-height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  .login, div.loginVideo{
+    width: 100%;
+  }
+  .loginLink{
+    width: 100%;
   }
 }
