@@ -154,7 +154,7 @@ button:active{
     min-height: 100%;
     width: 100%;
     align-items: center;
-    top: 20%;
+    top: 0%;
     left: 0%;
   }
   .login, div.loginVideo{
@@ -165,7 +165,21 @@ button:active{
   }
   .loginButton, .cAButton, .aUButton{
     text-align: center;
-    width: 100%;
+    width: 30%;
     box-shadow: 0px 0px 5px 1px black;
+  }
+  .loginHeading{
+    position: absolute;
+    top: 1%;
+    width: 100%;
+  }
+  .loginForm{
+    position: absolute;
+    width: 100%;
+    min-height: 50%;
+    top: 10%;
+  }
+  .account{
+    flex-direction: column;
   }
 }
