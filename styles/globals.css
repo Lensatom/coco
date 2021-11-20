@@ -147,3 +147,10 @@ button:active{
   color: red;
   top: 75%;
 }
+
+@media only screen and (max-width: 768px) {
+  .loginPage{
+    flex-direction: column;
+    min-height: 100%;
+  }
+}
