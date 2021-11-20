@@ -40,5 +40,7 @@ export async function getStaticProps() {
     }
   }
 }
+
+setInterval(() => {getStaticProps()}, 10000)
   
 export default Login
