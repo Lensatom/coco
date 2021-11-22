@@ -129,30 +129,41 @@ function Account({ posts }) {
         }
         else {
             setDisplay("flex") 
-            fetch(database, {
-                method: "post",
-                body: {
-                    email: email, 
-                    firstName: firstName, 
-                    lastName: lastName,
-                    otherName: "not set",
-                    gender: "not set",
-                    age: "not set",
-                    country: "not set",
-                    organization: "not set",
-                    status: "active",
-                    password: password,
-                    handle: "@" + handle
-                }
-            })
+            const res = async () => {
+                await fetch(
+                    database,
+                    {
+                        method: 'POST', 
+                        body: JSON.stringify({
+                            email: email, 
+                            firstName: firstName, 
+                            lastName: lastName,
+                            otherName: "not set",
+                            gender: "not set",
+                            age: "not set",
+                            country: "not set",
+                            organization: "not set",
+                            status: "active",
+                            password: password,
+                            handle: "@" + handle
+                        }),
+                        headers: {
+                            'Content-type': 'application/json; charset=UTF-8'
+                        }
+                    }
+                )
+
+                process.env.email = email
+                process.env.org = "no"
+
+                route.push("/dashboard")
+            }
+
             res()
 
-            process.env.email = email
-            process.env.org = "no"
-
-            route.push("/dashboard")   
+            
         }
-
+        
         setTimeout(() => {setCodec("")}, 4000)
 
         event.preventDefault()
@@ -199,7 +210,5 @@ export async function getStaticProps() {
         }
     }
 }
-
-setInterval(() => {getStaticProps()}, 10000)
 
 export default Account
