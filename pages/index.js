@@ -28,7 +28,7 @@ function Login( { posts } ) {
 }
 
 export async function getServerSideProps() {
-  const userRes = await fetch("http://52.66.40.75/box_968b81541942e609e35c/user")
+  const userRes = await fetch(`${process.env.DB}/user`)
   const userData = await userRes.json()
 
   const orgRes = await fetch("http://52.66.40.75/box_968b81541942e609e35c/org")
