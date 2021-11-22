@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import styles from '../styles/NewAccount.module.css'
 
-const database = "http://52.66.40.75/box_968b81541942e609e35c/user"
+const database = "http://localhost:3000/52.66.40.75/box_968b81541942e609e35c/user"
 
 function Account({ posts }) {
     
