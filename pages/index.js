@@ -27,7 +27,7 @@ function Login( { posts } ) {
   return body
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const userRes = await fetch("http://52.66.40.75/box_968b81541942e609e35c/user")
   const userData = await userRes.json()
 
@@ -38,7 +38,6 @@ export async function getStaticProps() {
     props: {
       posts: [userData, orgData]
     },
-    revalidate: 60
   }
 }
   
