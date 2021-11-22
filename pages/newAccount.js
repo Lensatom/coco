@@ -178,7 +178,7 @@ function Account({ posts }) {
             </div>
             <h2 className={styles.heading}> Let &apos; 's create your account </h2>
             <sub className={styles.des}> Fill all forms accordingly. Password must contain at least 8 characters including uppercase letters, lowercase letters, numbers and special characters </sub> 
-            <form onSubmit={createAccount} className={styles.form}>
+            <form onSubmit={createAccount} className={styles.form} method="post">
                 <label> Email </label>
                 <input type="email" value={email} onChange={emailChange} className={styles.input} required/>
                 <label> First Name </label>
