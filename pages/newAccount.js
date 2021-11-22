@@ -200,7 +200,7 @@ function Account({ posts }) {
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const response = await fetch(database)
     const data = await response.json()
 
