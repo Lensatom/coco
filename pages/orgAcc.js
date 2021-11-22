@@ -1,6 +1,5 @@
 import { useState, useEffect} from 'react'
 import { useRouter } from 'next/router'
-import axios from 'axios'
 import Link from 'next/link'
 import styles from '../styles/NewAccount.module.css'
 
@@ -119,17 +118,26 @@ function OrgAcc({ posts }) {
         }
         else {
             setDisplay("flex") 
-            const res = async () => await axios.post(database, {
-                email: email, 
-                name: name, 
-                motto: motto,
-                description: "not set",
-                address: "not set",
-                country: "not set",
-                type: "not set",
-                status: "active",
-                password: password,
-            })
+            const res = async () => await fetch(
+                database, 
+                {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        email: email, 
+                        name: name, 
+                        motto: motto,
+                        description: "not set",
+                        address: "not set",
+                        country: "not set",
+                        type: "not set",
+                        status: "active",
+                        password: password,
+                    }),
+                    headers: {
+                        'Content-type': 'application/json; charset=UTF-8'
+                    }
+                }
+            )
             res()
 
             process.env.email = email
@@ -148,7 +156,7 @@ function OrgAcc({ posts }) {
     return (
         <div className={styles.page}>
             <div style={cover}> 
-                <h2> Please, wait. You account is being created... </h2>
+                <h2> Please, wait. Your account is being created... </h2>
             </div>
             <h2 className={styles.heading}> Let &apos; 's create your account </h2>
             <sub className={styles.des}> Fill all forms accordingly. Password must contain at least 8 characters including uppercase letters, lowercase letters, numbers and special characters </sub> 
