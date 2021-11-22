@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import styles from '../styles/NewAccount.module.css'
 
-const database = "https://coco-online.vercel.app/about"
+const database = `${process.env.DB}/user`
 
 function Account({ posts }) {
     
