@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import styles from '../styles/NewAccount.module.css'
 
-const database = "https://coco-dabda-default-rtdb.firebaseio.com/"
+const database = "https://coco-dabda-default-rtdb.firebaseio.com"
 
 function Account({ posts }) {
     
