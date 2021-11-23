@@ -2,16 +2,10 @@ import { useState, useEffect} from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import styles from '../styles/NewAccount.module.css'
+import firebase from 'firebase/app'
+import 'firebase/firestore'
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+const config = {
   apiKey: "AIzaSyAVbzVOFHbh1umJ7RQ1dtI2DvzhHnF5GJ8",
   authDomain: "coco-dabda.firebaseapp.com",
   projectId: "coco-dabda",
@@ -21,9 +15,9 @@ const firebaseConfig = {
   measurementId: "G-HBL34MY9G0"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+if (!firebase.apps.length) {
+  firebase.initializeApp(config);
+}
 
 function Account({ posts }) {
     
