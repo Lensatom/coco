@@ -3,7 +3,27 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import styles from '../styles/NewAccount.module.css'
 
-const database = "https://coco-dabda-default-rtdb.firebaseio.com"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAVbzVOFHbh1umJ7RQ1dtI2DvzhHnF5GJ8",
+  authDomain: "coco-dabda.firebaseapp.com",
+  projectId: "coco-dabda",
+  storageBucket: "coco-dabda.appspot.com",
+  messagingSenderId: "999785564311",
+  appId: "1:999785564311:web:089121734995c15b51c1d2",
+  measurementId: "G-HBL34MY9G0"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 function Account({ posts }) {
     
@@ -200,15 +220,15 @@ function Account({ posts }) {
     )
 }
 
-export async function getServerSideProps() {
-    const response = await fetch(database)
-    const data = await response.json()
+// export async function getServerSideProps() {
+//     const response = await fetch(database)
+//     const data = await response.json()
 
-    return{
-        props: {
-            posts: data
-        }
-    }
-}
+//     return{
+//         props: {
+//             posts: data
+//         }
+//     }
+// }
 
 export default Account
