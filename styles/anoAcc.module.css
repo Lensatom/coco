@@ -1,0 +1,40 @@
+.page{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 46%;
+    height: 46%;
+    padding: 2%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 20px 0.5px black;
+}
+.head{
+    text-transform: uppercase;
+    color: black;
+    font-size: 16px;
+}
+.des{
+    color: grey;
+}
+.button{
+    background-color: blue;
+    color: white;
+    width: 60%;
+    padding: 2%;
+    border-radius: 10px;
+}
+.cancel{
+    background-color: red;
+}

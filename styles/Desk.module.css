@@ -1,0 +1,59 @@
+.page{
+  position: absolute;
+  width: 75%;
+  height: 88%;
+  top: 12%;
+  left: 15%;
+}
+.desk, .tower{
+  position: absolute;
+  top: 5%;
+  width: 56%;
+  padding: 0%
+}
+
+.tower{
+  left: 60%;
+  width: 35%;
+  padding-left: 2%;
+  height: 70%;
+  border-left: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.watches{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+  text-transform: capitalize;
+}
+
+.watch:nth-child(1){
+  color: green;
+}
+
+.watch:nth-child(2){
+  color: blue;
+}
+
+.watch:nth-child(3){
+  color: brown;
+}
+
+.watch:nth-child(4){
+  color: purple;
+}
+
+.watch:nth-child(5){
+  color: red;
+}
+.operations{
+  width: 100%;
+}
+.operation{
+  padding:2%;
+  margin: 2% 2% 2% 0%;
+  width: 46%;
+}

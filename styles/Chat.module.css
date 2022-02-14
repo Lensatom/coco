@@ -1,0 +1,39 @@
+.page{
+    position: absolute;
+    left: 15%;
+    top: 12%;
+    width: 75%;
+    height: 88%;
+    background-color: white;
+}
+.chats{
+    width: 80%;
+    margin-left: 10%;
+    height: 80%;
+    overflow-y: scroll;
+    
+}
+.form{
+    position: fixed;
+    bottom: 0%;
+    padding: 1% 5%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+.input{
+    padding: 3%;
+    border-radius: 30px;
+    border: 0;
+    width: 80%;
+    background-color: lightgrey;
+}
+.button{
+    background-color: blue;
+    color: white;
+    padding: 2%;
+    border: 0;
+    border-radius: 30px;
+}

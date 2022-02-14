@@ -1,0 +1,30 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+.you{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    float: left;
+    display: block;
+    margin: 3% 0%;
+    width: 40%;
+    margin-right: 50%;
+    min-height: 5%;
+}
+.me{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    float: right;
+    display: block;
+    margin: 3% 0%;
+    width: 40%;
+    margin-left: 60%;
+}

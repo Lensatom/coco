@@ -1,0 +1,56 @@
+.bar{
+    position: fixed;
+    width: 5%;
+    height: 88%;
+    top: 12%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    box-shadow: 0px 5px 3px 1px grey;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.head{
+    margin-left: 10%;
+    width: 50px;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 50%;
+    color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.handle{
+    font-size: 10px;
+}
+.navs{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.nav{
+    width: 80%;
+    cursor: pointer;
+    margin-left: -150%;
+}
+.modeNav{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -150%;
+}
+.nav:hover{
+    color: grey;
+}
+.nav:active{
+    color: lightgrey
+}

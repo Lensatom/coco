@@ -1,0 +1,56 @@
+.header{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 96%;
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 2%;
+  background-color: midnightblue;
+  color: white;
+}
+
+.head{
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.nav{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.list{
+  list-style: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(240, 240, 240);
+  cursor: pointer;
+  filter: invert(100%);
+}
+.list:hover{
+  color: white;
+}
+
+.name{
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.a{
+  color:rgb(240, 240, 240);
+}
+
+.motto {
+  font-family: mv boli;
+  font-size: 15px;
+  color: rgb(210, 201, 223);
+  margin-top: -5%;
+}
